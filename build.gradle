@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+plugins {
+    id "org.flywaydb.flyway" version "5.2.4"
+}
+
+flyway {
+    url = 'jdbc:postgresql://localhost:5432/migration'
+    user = 'min_privs'
+    password = 'min_privs'
+}
+
+group 'io.srcmaxim'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'org.postgresql:postgresql:42.2.5'
+}
+

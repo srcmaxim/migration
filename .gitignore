@@ -1,0 +1,7 @@
+# Gradle files:
+.gradle
+
+# Idea files:
+.idea
+build
+migration.iml
